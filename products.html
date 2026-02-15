@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store - Products</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html"><h1>Fashion Store</h1></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">All Products</h2>
+            
+            <!-- Search and Filter -->
+            <div class="filter-section">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="Tops">Tops</button>
+                    <button class="filter-btn" data-category="Bottoms">Bottoms</button>
+                    <button class="filter-btn" data-category="Dresses">Dresses</button>
+                    <button class="filter-btn" data-category="Outerwear">Outerwear</button>
+                </div>
+            </div>
+
+            <div class="products-grid" id="products-grid">
+                <div class="product-card" data-category="Tops" data-name="classic t-shirt">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=300&h=400&fit=crop" alt="T-Shirt">
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic T-Shirt</h3>
+                        <p class="price">$29.99</p>
+                        <a href="product-detail.html?id=1" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Bottoms" data-name="denim jeans">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=300&h=400&fit=crop" alt="Jeans">
+                    </div>
+                    <div class="product-info">
+                        <h3>Denim Jeans</h3>
+                        <p class="price">$49.99</p>
+                        <a href="product-detail.html?id=2" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Dresses" data-name="summer dress">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=300&h=400&fit=crop" alt="Dress">
+                    </div>
+                    <div class="product-info">
+                        <h3>Summer Dress</h3>
+                        <p class="price">$39.99</p>
+                        <a href="product-detail.html?id=3" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Outerwear" data-name="winter jacket">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=300&h=400&fit=crop" alt="Jacket">
+                    </div>
+                    <div class="product-info">
+                        <h3>Winter Jacket</h3>
+                        <p class="price">$79.99</p>
+                        <a href="product-detail.html?id=4" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Tops" data-name="cozy sweater">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=300&h=400&fit=crop" alt="Sweater">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cozy Sweater</h3>
+                        <p class="price">$44.99</p>
+                        <a href="product-detail.html?id=5" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Bottoms" data-name="casual shorts">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1506629905607-cc2c0c0e0a0c?w=300&h=400&fit=crop" alt="Shorts">
+                    </div>
+                    <div class="product-info">
+                        <h3>Casual Shorts</h3>
+                        <p class="price">$24.99</p>
+                        <a href="product-detail.html?id=6" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Tops" data-name="comfort hoodie">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=300&h=400&fit=crop" alt="Hoodie">
+                    </div>
+                    <div class="product-info">
+                        <h3>Comfort Hoodie</h3>
+                        <p class="price">$54.99</p>
+                        <a href="product-detail.html?id=7" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Bottoms" data-name="elegant skirt">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=300&h=400&fit=crop" alt="Skirt">
+                    </div>
+                    <div class="product-info">
+                        <h3>Elegant Skirt</h3>
+                        <p class="price">$34.99</p>
+                        <a href="product-detail.html?id=8" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Tops" data-name="formal shirt">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=300&h=400&fit=crop" alt="Formal Shirt">
+                    </div>
+                    <div class="product-info">
+                        <h3>Formal Shirt</h3>
+                        <p class="price">$35.99</p>
+                        <a href="product-detail.html?id=9" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Outerwear" data-name="leather jacket">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=300&h=400&fit=crop" alt="Leather Jacket">
+                    </div>
+                    <div class="product-info">
+                        <h3>Leather Jacket</h3>
+                        <p class="price">$89.99</p>
+                        <a href="product-detail.html?id=10" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Dresses" data-name="maxi dress">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=300&h=400&fit=crop" alt="Maxi Dress">
+                    </div>
+                    <div class="product-info">
+                        <h3>Maxi Dress</h3>
+                        <p class="price">$45.99</p>
+                        <a href="product-detail.html?id=11" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Bottoms" data-name="cargo pants">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1506629905607-cc2c0c0e0a0c?w=300&h=400&fit=crop" alt="Cargo Pants">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cargo Pants</h3>
+                        <p class="price">$42.99</p>
+                        <a href="product-detail.html?id=12" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Tops" data-name="polo shirt">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=300&h=400&fit=crop" alt="Polo Shirt">
+                    </div>
+                    <div class="product-info">
+                        <h3>Polo Shirt</h3>
+                        <p class="price">$32.99</p>
+                        <a href="product-detail.html?id=13" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Bottoms" data-name="chino pants">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=300&h=400&fit=crop" alt="Chino Pants">
+                    </div>
+                    <div class="product-info">
+                        <h3>Chino Pants</h3>
+                        <p class="price">$47.99</p>
+                        <a href="product-detail.html?id=14" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Dresses" data-name="floral dress">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=300&h=400&fit=crop" alt="Floral Dress">
+                    </div>
+                    <div class="product-info">
+                        <h3>Floral Dress</h3>
+                        <p class="price">$42.99</p>
+                        <a href="product-detail.html?id=15" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Outerwear" data-name="bomber jacket">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=300&h=400&fit=crop" alt="Bomber Jacket">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bomber Jacket</h3>
+                        <p class="price">$69.99</p>
+                        <a href="product-detail.html?id=16" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Tops" data-name="v-neck t-shirt">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=300&h=400&fit=crop" alt="V-Neck T-Shirt">
+                    </div>
+                    <div class="product-info">
+                        <h3>V-Neck T-Shirt</h3>
+                        <p class="price">$27.99</p>
+                        <a href="product-detail.html?id=17" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Bottoms" data-name="jogger pants">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1506629905607-cc2c0c0e0a0c?w=300&h=400&fit=crop" alt="Jogger Pants">
+                    </div>
+                    <div class="product-info">
+                        <h3>Jogger Pants</h3>
+                        <p class="price">$38.99</p>
+                        <a href="product-detail.html?id=18" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Dresses" data-name="cocktail dress">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=300&h=400&fit=crop" alt="Cocktail Dress">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cocktail Dress</h3>
+                        <p class="price">$59.99</p>
+                        <a href="product-detail.html?id=19" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Outerwear" data-name="trench coat">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=300&h=400&fit=crop" alt="Trench Coat">
+                    </div>
+                    <div class="product-info">
+                        <h3>Trench Coat</h3>
+                        <p class="price">$99.99</p>
+                        <a href="product-detail.html?id=20" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div id="no-results" class="no-results" style="display: none;">
+                <p>No products found. Try a different search or filter.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Fashion Store</h3>
+                    <p>Your one-stop destination for trendy and affordable fashion.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: info@fashionstore.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Address: 123 Fashion Street, City</p>
+                </div>
+            </div>
+            <p class="footer-bottom">&copy; 2024 Fashion Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/products-filter.js"></script>
+</body>
+</html>

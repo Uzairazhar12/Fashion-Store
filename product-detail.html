@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store - Product Details</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html"><h1>Fashion Store</h1></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-wrapper">
+                <div class="product-image-large">
+                    <img id="product-image" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=600&fit=crop" alt="Product">
+                </div>
+                <div class="product-details">
+                    <h2 id="product-name">Classic T-Shirt</h2>
+                    <p class="product-price" id="product-price">$29.99</p>
+                    <p class="product-description" id="product-description">
+                        High-quality cotton t-shirt perfect for everyday wear. Comfortable fit and durable fabric that lasts.
+                    </p>
+                    <div class="size-selector">
+                        <label>Size:</label>
+                        <select id="product-size">
+                            <option value="S">Small (S)</option>
+                            <option value="M" selected>Medium (M)</option>
+                            <option value="L">Large (L)</option>
+                            <option value="XL">Extra Large (XL)</option>
+                        </select>
+                    </div>
+                    <div class="quantity-selector">
+                        <label>Quantity:</label>
+                        <button class="qty-btn" id="decrease-qty">-</button>
+                        <input type="number" id="quantity" value="1" min="1" max="10">
+                        <button class="qty-btn" id="increase-qty">+</button>
+                    </div>
+                    <button class="btn btn-primary btn-large" id="add-to-cart">Add to Cart</button>
+                    <a href="products.html" class="back-link">← Back to Products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Fashion Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/product-detail.js"></script>
+</body>
+</html>
+
